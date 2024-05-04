@@ -60,8 +60,8 @@ class Login extends Component {
 
     const options = {
       method: 'POST',
-      mode: 'cors',
-      timeout: 60000,
+      mode: 'no-cors',
+      // timeout: 60000,
       headers: {
         "Content-Type": "application/json",
       },
