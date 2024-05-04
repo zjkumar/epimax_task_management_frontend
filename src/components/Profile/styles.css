@@ -1,0 +1,75 @@
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.profile-card, .overlay-card{
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-top: 80px;
+    background-color: bisque;
+    padding: 20px;
+    box-shadow: 0 0 18px 1px ;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow-btn{
+    transform: rotate(90deg);
+    background-color: transparent;
+    border: none;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 20px;
+    height: 22px;
+    width: 22px;
+    border-radius: 3px;
+}
+
+.arrow-btn:hover{
+    background-color: rgba(255, 255, 255, 0.816);
+    box-shadow: 0px 0px 8px 1px;
+}
+
+.profile-btn {
+    height: 39px;
+    width: 39px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.profile-img{
+    max-width: 100%;
+}
+
+.username{
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+.logout-btn{
+    background-color: rgb(193, 73, 218);
+    border: none;
+    color: rgb(53, 37, 37);
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    
+}
