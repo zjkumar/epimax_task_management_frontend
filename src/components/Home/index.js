@@ -50,31 +50,7 @@ class Home extends Component{
         this.setState({sections})
     }
 
-    addUser = async () => {
-        let fullName = 'jagadeesh kumar'
-        let username = 'jk'
-
-        let details = {
-            fullName, username
-        }
-
-        let url = `${currentHost}/create-user`
-
-        const options = {
-            method: 'POST',
-            mode: 'cors',
-      cache: 'no-cache',
-      credentials: 'same-origin',
-            headers: {
-                "Content-Type": "application/json",
-              },
-            body: JSON.stringify(details)
-        }
-        const response = await fetch(url, options)
-        console.log(response, 'this is response')
-        const data = await response.json()
-        console.log(data)
-    }
+    
 
     saveTheTask = async (section_id, task, priority, assignee ) => {
         const token = Cookies.get('jwt_token')
