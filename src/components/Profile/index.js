@@ -28,6 +28,8 @@ const Profile = () => {
        logoutBtn.addEventListener('click', event => {
         event.preventDefault()
         event.stopPropagation()
+
+        document.body.removeChild(overlay)
         console.log('logout clicked')
         Cookies.remove('jwt_token')
 
