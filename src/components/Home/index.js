@@ -33,6 +33,7 @@ class Home extends Component{
 
         const options = {
             method: 'GET',
+            mode: 'no-cors',
             headers: {
                 "authorization": `Bearer ${token}`,
                 "Content-Type": "application/json"
@@ -59,6 +60,7 @@ class Home extends Component{
 
         const options = {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
                 "Content-Type": "application/json",
               },
@@ -77,6 +79,7 @@ class Home extends Component{
         const details = {section_id, task, priority, assignee}
         const options = {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
                 "Content-Type": "application/json",
                 "authorization": `Bearer ${token}`
@@ -248,6 +251,7 @@ class Home extends Component{
 
         const options = {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
                 'authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json'
@@ -435,6 +439,7 @@ class Home extends Component{
 
         const options = {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
                 'authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json'
@@ -462,6 +467,7 @@ class Home extends Component{
 
         const options = {
             method: 'DELETE',
+            mode: 'no-cors',
             headers: {
                 'authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json',
@@ -651,6 +657,7 @@ class Home extends Component{
     
         const options = {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
                 'authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json'
