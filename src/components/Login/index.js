@@ -98,7 +98,9 @@ class Login extends Component {
 
         const options = {
             method: 'POST',
-            mode: 'no-cors',
+            mode: 'cors',
+      cache: 'no-cache',
+      credentials: 'same-origin',
             headers: {
                 "Content-Type": "application/json",
               },
