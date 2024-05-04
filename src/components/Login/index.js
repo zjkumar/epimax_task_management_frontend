@@ -62,7 +62,7 @@ class Login extends Component {
       method: 'POST',
       mode: 'cors',
       cache: 'no-cache',
-      credentials: 'same-origin'
+      credentials: 'same-origin',
       // timeout: 60000,
       headers: {
         "Content-Type": "application/json",
