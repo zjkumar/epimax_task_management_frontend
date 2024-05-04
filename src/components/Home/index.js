@@ -37,7 +37,7 @@ class Home extends Component{
       cache: 'no-cache',
       credentials: 'same-origin',
             headers: {
-                "authorization": `Bearer ${token}`,
+                Authorization: `Bearer ${token}`,
                 "Content-Type": "application/json"
             }
         }
@@ -88,7 +88,7 @@ class Home extends Component{
       credentials: 'same-origin',
             headers: {
                 "Content-Type": "application/json",
-                "authorization": `Bearer ${token}`
+                Authorization: `Bearer ${token}`
               },
             
             body: JSON.stringify(details)
@@ -231,7 +231,7 @@ class Home extends Component{
     //     const options = {
     //         method: 'POST',
     //         headers: {
-    //             'authorization': `Bearer ${token}`,
+    //             Authorization: `Bearer ${token}`,
     //             'Content-Type': 'application/json'
     //         },
     //         body: JSON.stringify(details)
@@ -261,7 +261,7 @@ class Home extends Component{
       cache: 'no-cache',
       credentials: 'same-origin',
             headers: {
-                'authorization': `Bearer ${token}`,
+                Authorization: `Bearer ${token}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(details)
@@ -451,7 +451,7 @@ class Home extends Component{
       cache: 'no-cache',
       credentials: 'same-origin',
             headers: {
-                'authorization': `Bearer ${token}`,
+                Authorization: `Bearer ${token}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(details)
@@ -481,7 +481,7 @@ class Home extends Component{
       cache: 'no-cache',
       credentials: 'same-origin',
             headers: {
-                'authorization': `Bearer ${token}`,
+                Authorization: `Bearer ${token}`,
                 'Content-Type': 'application/json',
                 'section_id' : section_id
             }
@@ -673,7 +673,7 @@ class Home extends Component{
       cache: 'no-cache',
       credentials: 'same-origin',
             headers: {
-                'authorization': `Bearer ${token}`,
+                Authorization: `Bearer ${token}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(details)
